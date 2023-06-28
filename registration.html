@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <title>Event Registration Form</title>
+    <style>
+        body {
+        background-image: url("background.jpg");
+        background-size: cover;
+        background-repeat: repeat;
+    }
+.container {
+    display: flex;
+    padding:50px;
+  }     
+.right-block {
+    color: black;
+    font-family: Arial, sans-serif;
+    text-shadow: 2px 2px 4px #d45656; 
+    font-size: 45px; 
+    font-weight: bold;    
+    font-style: italic;
+}
+.footer-container{
+    background-color: #f0f0f0;
+    text-align: center;
+}
+.form-container form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+.container form button:hover {
+    background-color: #902909;
+}
+.register {
+      text-align: center;
+      margin-top: 10px;
+}
+.form-container input[type="text"],
+    .form-container input[type="email"],
+    .form-container input[type="tel"],
+    .form-container input[type="password"],
+    .form-container input[type="submit"] {
+      width: 100%;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+      border: 1px solid #eae0e0;
+      border-radius: 4px;
+    }
+    .form-container form button:hover {
+    background-color: #902909;
+}
+.form-container form label {
+    display: block;
+    margin-top: 20px;
+}
+
+.form-container {
+      max-width: 400px;
+      margin: 10px auto;
+      padding: 20px;
+      border: 10px solid rgb(208, 223, 230);
+}
+    .checkbox-group {
+    display: flex;
+    align-items: center;
+}
+   
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+        <div class="left-block">
+          <img src="bradleylogo.png" alt="Bradley University Logo">
+        </div>
+        <div class="right-block">
+          <p>Bradley University Computer Science Department Event Registeration Portal</p>
+        </div>
+       
+      </div>
+      </header>
+      <main>
+    <div class="form-container">
+        <h2 align="center">Event Registration</h2>
+        <form action="/register" method="POST" id="registrationForm">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="attendees">Number of Attendees:</label>
+            <input type="number" id="attendees" name="attendees" required>
+            
+            <div class="checkbox-group">
+            <label for="options">Events:</label>
+            
+                <input type="checkbox" id="Hackathon" name="options" value="Hackathon">
+                <label for="Hackathon">Hackathon</label>
+            
+                <input type="checkbox" id="Technovation" name="options" value="Technovation">
+                <label for="Technovation">Technovation</label>
+            
+                <input type="checkbox" id="Guess_the_word" name="options" value="Guess_the_word">
+                <label for="Guess_the_word">Guess the word</label>
+            </div>
+            
+            
+            <label for="comments">Comments:</label>
+            <input type="text" id="comments" name="comments">
+            
+            <div class="register">
+            <button type="submit" align="center" id="register">Register</button>
+            </div>
+        </form>
+    </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <p>&copy; Satya Chinmayie Rajanala. All rights reserved.</p>
+          </div>
+    </footer>
+
+    <script src="script.js"> </script>
+</body>
+</html>

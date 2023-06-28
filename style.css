@@ -1,0 +1,37 @@
+
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main {
+    flex-grow: 1;
+  }
+.container {
+    display: flex;
+  }  
+.right-block {
+    color: black;
+    font-family: Arial, sans-serif;
+    text-shadow: 2px 2px 4px #d45656; 
+    font-size: 45px; 
+    font-weight: bold;    
+    font-style: italic; 
+  }
+.bg-container{
+    background-image: url("bradleyuniversitycs.jpg");
+    background-size: cover;
+    background-position: center; 
+  }
+.footer-container{
+    background-color: #f0f0f0;
+    text-align: center;
+  }
